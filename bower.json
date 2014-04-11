@@ -12,7 +12,8 @@
     "modernizr": "~2.6.2",
     "chai": "1.9.1",
     "mocha": "1.18.2",
-    "sinon": "1.9.1"
+    "sinonjs": "1.9.0",
+    "blanket": "1.1.5"
   },
   "devDependencies": {
     "mocha": "~1.18.2",

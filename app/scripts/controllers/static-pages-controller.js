@@ -4,8 +4,8 @@ define(function (require) {
 
     var StaticPagesController,
         Backbone = require('backbone'),
-        HomeView = require('views/static-page/home'),
-        HelpView = require('views/static-page/help');
+        HomeView = require('views/static_pages/home'),
+        HelpView = require('views/static_pages/help');
 
     StaticPagesController = function () {};
 
@@ -21,5 +21,6 @@ define(function (require) {
 
     }
 
+    return StaticPagesController;
 
 });

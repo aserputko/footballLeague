@@ -112,6 +112,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+        blanket_mocha: {
+            all: {
+                options: {
+                    run: false,
+                    reporter: 'Spec',
+                    threshold: 90,
+                    urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/test/index.html']
+                }
+            }
+        },
         compass: {
             options: {
                 sassDir: '<%= yeoman.app %>/styles',
@@ -399,7 +409,7 @@ module.exports = function (grunt) {
         'concurrent:test',
         'autoprefixer',
         'connect:test',
-        'mocha'
+        'blanket_mocha'
     ]);
 
     grunt.registerTask('build', [

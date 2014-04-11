@@ -20,11 +20,12 @@
         <link rel="stylesheet" href="../app/bower_components/mocha/mocha.css">
         <script src="../app/bower_components/mocha/mocha.js"></script>
         <script src="../app/bower_components/chai/chai.js"></script>
-        <script src="../app/bower_components/sinon/lib/sinon.js"></script>
+        <script src="../app/bower_components/sinonjs/sinon.js"></script>
         
     </head>
     <body>
         <div class="container"></div>
+        <div id="blanket-main"></div>
         <div id="mocha" style="opacity: 0.85;"></div>
 
         <script>
@@ -37,8 +38,10 @@
                 }
             );
             var expect = chai.expect;
+
         </script>
 
-        <script data-main="spec/main" src="../app/bower_components/requirejs/require.js"></script>
+        <script data-main="spec/main" src="../app/bower_components/requirejs/require.js" data-cover></script>
+        <script src="../app/bower_components/blanket/dist/qunit/blanket.js" data-cover-only="../app/scripts"></script>
     </body>
 </html>
