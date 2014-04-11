@@ -1,0 +1,21 @@
+{
+  "name": "javascripttutorial",
+  "version": "0.0.2",
+  "dependencies": {
+    "sass-bootstrap": "2.3.2",
+    "jquery": "~1.9.0",
+    "lodash": "~2.4.1",
+    "backbone": "~1.0.0",
+    "backbone.validation": "~0.7.1",
+    "requirejs": "~2.1.5",
+    "requirejs-text": "~2.0.5",
+    "modernizr": "~2.6.2",
+    "chai": "1.9.1",
+    "mocha": "1.18.2",
+    "sinon": "1.9.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1"
+  }
+}
